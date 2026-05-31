@@ -38,22 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
 async function procesarMensaje() {
     const campoTexto = document.getElementById('entrada-usuario');
     const mensajeTexto = campoTexto.value.trim();
-    
+
     if (!mensajeTexto) return;
 
     // Mostrar mensaje del usuario (esUsuario = true)
     dibujarMensajeEnPantalla(mensajeTexto, true);
-    campoTexto.value = ""; 
+    campoTexto.value = "";
 
     try {
-        const respuestaServidor = await fetch('/.netlify/functions/chatbot.js', {
+        const respuestaServidor = await fetch('/.netlify/functions/chatbot', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ mensaje: mensajeTexto })
         });
-        
+
         const datos = await respuestaServidor.json();
-        
+
         if (respuestaServidor.ok) {
             dibujarMensajeEnPantalla(datos.respuesta, false);
         } else {
@@ -68,16 +68,16 @@ async function procesarMensaje() {
 function dibujarMensajeEnPantalla(texto, esUsuario) {
     const cajaMensajes = document.getElementById('caja-mensajes');
     const contenedorMensaje = document.createElement('div');
-    
+
     // Selecciona tus clases según quién escribe
     const claseTipo = esUsuario ? 'user-msg' : 'bot-msg bg-white';
-    
+
     // Aplica tu clase .chat-msg que controla el tamaño y la fuente
     contenedorMensaje.className = `chat-msg ${claseTipo} p-2 rounded-3 shadow-sm mb-3`;
-    
+
     const textoFormateado = texto.replace(/\n/g, '<br>');
     contenedorMensaje.innerHTML = textoFormateado;
-    
+
     cajaMensajes.appendChild(contenedorMensaje);
     cajaMensajes.scrollTop = cajaMensajes.scrollHeight;
 }
@@ -101,7 +101,7 @@ function calcularProyeccion() {
     }
 
     const acumulado = p1 + p2;
-    const requeridoExamen = 21 - acumulado; 
+    const requeridoExamen = 21 - acumulado;
 
     alertBox.classList.remove('d-none');
 
