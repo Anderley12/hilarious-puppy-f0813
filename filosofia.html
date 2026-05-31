@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTELVT - Portal Institucional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light pt-2 mt-3">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-institucional shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="UTLVTE" class="me-2" style="height: 40px;">
+                UTLVTE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-semibold justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienes-somos.html#historia">Historia</a></li>
+                            <li><a class="dropdown-item" href="filosofia.html">Filosofía</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='servicios.html';">
+                            Servicios y Carreras
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="administracion.html">Administración de Empresas</a></li>
+                            <li><a class="dropdown-item" href="contabilidad.html">Contabilidad y Auditoría</a></li>
+                            <li><a class="dropdown-item" href="tecnologia.html">Tecnología de la Información</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Componentes Tecnológicos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-menu-item dropdown-item" href="componentes.html">Asistente &
+                                    Simulador</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="juego.html">Juego Educativo</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="reconocimiento.html">Reconocimiento
+                                    Emociones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Sección de Filosofía: Misión y Visión (Diseño Escalonado y Compacto) -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+
+            <div class="row align-items-center mb-4 pb-4 ">
+                <div class="col-lg-7 order-1 mb-4 mb-lg-0">
+                    <div class="card shadow border-0 rounded-4 p-4"
+                        style="background-color: #006633; transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-2">
+                            <i class="fa-solid fa-bullseye fa-2x mb-3" style="color: #FF4040;"></i>
+                            <h4 class="fw-bold text-white mb-3">Misión</h4>
+                            <div class="linea-bicolor mx-auto mb-4"
+                                style="background: linear-gradient(to right, #FF4040 50%, #ffff 50%); height: 3px; width: 100px; border-radius: 2px;">
+                            </div>
+
+                            <p class="text-white lh-base mb-0"
+                                style="text-align: justify; text-align-last: center; font-size: 0.95rem;">
+                                Formación integral de profesionales críticos, propositivos y humanistas, mediante un
+                                proceso educativo actual, articulado entre la docencia, la investigación y la
+                                vinculación con la sociedad, para el desarrollo sostenible de la sociedad, basados en la
+                                construcción adecuada de la cultura universal y ancestral ecuatoriana, la ciencia y la
+                                tecnología.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-2 text-center">
+                    <img src="foto-mision.jpg"
+                        onerror="this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'"
+                        alt="Misión UTELVT" class="img-fluid rounded-4 shadow"
+                        style="object-fit: cover; height: 300px; width: 100%;">
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-2">
+                <div class="col-lg-5 order-2 order-lg-1 text-center mt-4 mt-lg-0">
+                    <img src="foto-vision.jpg"
+                        onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'"
+                        alt="Visión UTELVT" class="img-fluid rounded-4 shadow"
+                        style="object-fit: cover; height: 250px; width: 100%;">
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                    <div class="card shadow border-0 rounded-4 p-4"
+                        style="background-color: #f4f6f8; transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <div class="card-body text-center p-2">
+                            <i class="fa-solid fa-eye fa-2x mb-3" style="color: #006633;"></i>
+                            <h4 class="fw-bold text-dark mb-3">Visión al 2030</h4>
+                            <div class="linea-bicolor mx-auto mb-4"
+                                style="background: linear-gradient(to right, #FF4040 50%, #006633 50%); height: 3px; width: 100px; border-radius: 2px;">
+                            </div>
+
+                            <p class="text-muted lh-base mb-0"
+                                style="text-align: justify; text-align-last: center; font-size: 0.95rem;">
+                                Ser un referente a nivel nacional e internacional de excelencia académica, científica,
+                                tecnológica y cultural, que incide positivamente en el desarrollo equitativo e integral
+                                de la sociedad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-1 bg-institucional text-white">
+        <div class="container py-5">
+            <div class="text-center mb-5 bg-white ">
+                <h2 class="fw-bold mb-3" style="color: #006633;">Valores Institucionales</h2>
+                <div class="linea-bicolor mx-auto"
+                    style="background: linear-gradient(to right, #FF4040 50%, #006633 50%); height: 4px; width: 140px; border-radius: 2px;">
+                </div>
+                <p class="text-muted mt-3">Principios éticos que guían nuestra comunidad universitaria.</p>
+            </div>
+
+            <div class="row g-4 text-center justify-content-center">
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-light"
+                        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.classList.add('shadow');"
+                        onmouseout="this.style.transform='translateY(0)'; this.classList.remove('shadow');">
+                        <div class="card-body p-0">
+                            <i class="fa-solid fa-handshake fa-3x mb-3" style="color: #006633;"></i>
+                            <h5 class="fw-bold text-dark mb-0">Respeto</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-light"
+                        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.classList.add('shadow');"
+                        onmouseout="this.style.transform='translateY(0)'; this.classList.remove('shadow');">
+                        <div class="card-body p-0">
+                            <i class="fa-solid fa-hand-holding-heart fa-3x mb-3 text-warning"></i>
+                            <h5 class="fw-bold text-dark mb-0">Solidaridad</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-light"
+                        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.classList.add('shadow');"
+                        onmouseout="this.style.transform='translateY(0)'; this.classList.remove('shadow');">
+                        <div class="card-body p-0">
+                            <i class="fa-solid fa-scale-balanced fa-3x mb-3" style="color: #006633;"></i>
+                            <h5 class="fw-bold text-dark mb-0">Tolerancia</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-light"
+                        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.classList.add('shadow');"
+                        onmouseout="this.style.transform='translateY(0)'; this.classList.remove('shadow');">
+                        <div class="card-body p-0">
+                            <i class="fa-solid fa-shield-halved fa-3x mb-3 text-warning"></i>
+                            <h5 class="fw-bold text-dark mb-0">Honestidad</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-light"
+                        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.classList.add('shadow');"
+                        onmouseout="this.style.transform='translateY(0)'; this.classList.remove('shadow');">
+                        <div class="card-body p-0">
+                            <i class="fa-solid fa-list-check fa-3x mb-3" style="color: #006633;"></i>
+                            <h5 class="fw-bold text-dark mb-0">Responsabilidad</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-light"
+                        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-8px)'; this.classList.add('shadow');"
+                        onmouseout="this.style.transform='translateY(0)'; this.classList.remove('shadow');">
+                        <div class="card-body p-0">
+                            <i class="fa-solid fa-equals fa-3x mb-3 text-warning"></i>
+                            <h5 class="fw-bold text-dark mb-0">Igualdad</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de Principios y Valores (Basado en el documento oficial) -->
+    <section class="py-2 bg-white">
+        <div class="container py-5 ">
+
+            <!-- Título Principal -->
+            <div class="text-center mb-3 border-bottom-institucional pb-3 container">
+                <h2 class="fw-bold mb-3" style="color: #006633;">Principios y Valores</h2>
+                <div class="linea-bicolor mx-auto"
+                    style="background: linear-gradient(to right, #FF4040 50%, #006633 50%); height: 4px; width: 140px; border-radius: 2px;">
+                </div>
+            </div>
+
+            <!-- 1. PRINCIPIOS -->
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card bg-light border-0 shadow-sm rounded-4 p-4">
+                        <div class="card-body">
+                            <h4 class="fw-bold" style="color: #006633;"><i
+                                    class="fa-solid fa-landmark text-danger me-2"></i> Principios</h4>
+                            <p class="text-muted mb-0 mt-3" style="text-align: justify; line-height: 1.8;">
+                                La Universidad Técnica "Luis Vargas Torres" de Esmeraldas, responde de manera integral a
+                                los principios de autonomía responsable, cogobierno, igualdad oportunidades, calidad,
+                                pertinencia, integralidad, y autodeterminación para la producción del pensamiento y
+                                conocimiento en el marco del diálogo de saberes, pensamiento universal y producción
+                                científica, tecnológica global.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. VALORES DETALLADOS -->
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-book-open text-success me-2"></i> Valores
+                    </h4>
+                    <p class="text-muted mb-4">La Universidad Técnica "Luis Vargas Torres" de Esmeraldas, tiene los
+                        siguientes valores:</p>
+
+                    <ol class="list-group list-group-numbered shadow-sm">
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-start py-3 border-0 border-bottom">
+                            <div class="ms-2 me-auto text-muted" style="text-align: justify;">
+                                <strong class="text-dark">El Humanismo,</strong> entendido como el desarrollo de las
+                                potencialidades del ser humano a su máxima expresión, defensa de sus derechos y fiel
+                                cumplimiento de sus obligaciones, en equidad de género;
+                            </div>
+                        </li>
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-start py-3 border-0 border-bottom bg-light">
+                            <div class="ms-2 me-auto text-muted" style="text-align: justify;">
+                                <strong class="text-dark">La Interculturalidad,</strong> porque reconoce la diversidad
+                                étnica y cultural del país, de América y del mundo, como base para construir la unidad
+                                en la diversidad;
+                            </div>
+                        </li>
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-start py-3 border-0 border-bottom">
+                            <div class="ms-2 me-auto text-muted" style="text-align: justify;">
+                                <strong class="text-dark">El pluralismo,</strong> porque está abierta a todas las
+                                corrientes del pensamiento universal;
+                            </div>
+                        </li>
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-start py-3 border-0 border-bottom bg-light">
+                            <div class="ms-2 me-auto text-muted" style="text-align: justify;">
+                                <strong class="text-dark">La Solidaridad,</strong> porque está atenta al acontecer de
+                                los movimientos sociales, y participa en la búsqueda de la transformación de las
+                                estructuras de dominación política y económica;
+                            </div>
+                        </li>
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-start py-3 border-0 border-bottom">
+                            <div class="ms-2 me-auto text-muted" style="text-align: justify;">
+                                <strong class="text-dark">La Libertad,</strong> Porque tiene autonomía para organizarse
+                                y gobernarse, de acuerdo con la Ley y las exigencias de la demanda de la sociedad, a la
+                                que rendirá cuentas;
+                            </div>
+                        </li>
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-start py-3 border-0 border-bottom bg-light">
+                            <div class="ms-2 me-auto text-muted" style="text-align: justify;">
+                                <strong class="text-dark">La Cientificidad,</strong> porque privilegia la búsqueda de la
+                                verdad por métodos científicos, para poner la ciencia y la tecnología al servicio del
+                                desarrollo social con ética y eficacia;
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start py-3 border-0">
+                            <div class="ms-2 me-auto text-muted" style="text-align: justify;">
+                                <strong class="text-dark">El ambientalismo,</strong> porque promueve el manejo
+                                sustentable de la biodiversidad y los recursos naturales para garantizar la vida de las
+                                futuras;
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 3. VALORES ÉTICOS FUNDAMENTALES -->
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h5 class="fw-bold text-dark mb-3"><i class="fa-solid fa-users-viewfinder text-warning me-2"></i>
+                        Valores Éticos Fundamentales</h5>
+                    <p class="text-muted mb-4">Para ello, la comunidad universitaria practica los valores éticos
+                        fundamentales:</p>
+
+                    <!-- Cuadrícula de valores éticos -->
+                    <div class="row g-3 text-center">
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Honestidad</div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Respeto</div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Tolerancia</div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Lealtad</div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Puntualidad
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 text-center mt-1">
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Justicia</div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Responsabilidad
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Cumplimiento
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Integridad</div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-auto flex-lg-fill">
+                            <div class="p-3 border rounded shadow-sm bg-white fw-semibold text-success">Equidad</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold text-success"><i class="fa-solid fa-university"></i> UTELVT</h5>
+                    <p class="small text-light mt-3" style="opacity: 0.7;">Sede La Concordia (La Villegas), formando
+                        líderes en Tecnologías de la Información, Administración y Contabilidad para el desarrollo del
+                        país.</p>
+                </div>
+                <div class="col-md-4 mb-3 text-md-center">
+                    <h5 class="fw-bold">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled mt-3 small">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="quienes-somos.html" class="text-white text-decoration-none">Quiénes
+                                Somos</a></li>
+                        <li class="mb-2"><a href="componentes.html" class="text-white text-decoration-none">Componentes
+                                Tecnológicos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3 text-md-end">
+                    <h5 class="fw-bold">Contacto Sede</h5>
+                    <ul class="list-unstyled mt-3 small text-light" style="opacity: 0.7;">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-success"></i> La Concordia - La
+                            Villegas</li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-success"></i>
+                            info.concordia@utelvt.edu.ec</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center small text-light mt-3" style="opacity: 0.6;">
+                &copy; 2026 Universidad Técnica Luis Vargas Torres - 9no TI. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

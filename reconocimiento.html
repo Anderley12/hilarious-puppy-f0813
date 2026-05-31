@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTELVT - Reconocimiento de Emociones</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-institucional shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center " href="index.html">
+                <img src="logo.png " alt="UTLVTE" class="me-3" style="height: 40px;">
+                UTLVTE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-semibold justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienes-somos.html#historia">Historia</a></li>
+                            <li><a class="dropdown-item" href="filosofia.html">Filosofía</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            onclick="window.location.href='servicios.html';">
+                            Servicios y Carreras
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="administracion.html">Administración de Empresas</a></li>
+                            <li><a class="dropdown-item" href="contabilidad.html">Contabilidad y Auditoría</a></li>
+                            <li><a class="dropdown-item" href="tecnologia.html">Tecnología de la Información</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Componentes Tecnológicos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-menu-item dropdown-item" href="componentes.html">Asistente &
+                                    Simulador</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="juego.html">Juego Educativo</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="reconocimiento.html">Reconocimiento
+                                    Emociones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-section">
+
+        <div class="container">
+
+            <div class="row g-0 align-items-stretch">
+
+                <!-- IMAGEN -->
+                <div class="col-lg-6 mb-4 mb-lg-0 px-0">
+
+                    <div class="hero-image rounded shadow-sm overflow-hidden h-100">
+
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop"
+                            alt="Reconocimiento Facial IA" class="img-fluid w-100 h-100">
+
+                    </div>
+
+                </div>
+
+                <!-- TEXTO -->
+                <div class="col-lg-6 text-white text-center text-lg-start d-flex align-items-center">
+
+                    <div class="w-100">
+
+                        <img src="CABECERA-SANTO-DOMINGO-1.png" alt="UTELVT" class="img-fluid logo-hero">
+
+                        <p class="lead text-shadow fs-4 mt-3 text-center">
+
+                            Sistema Inteligente de Reconocimiento de Emociones mediante Inteligencia Artificial y Visión
+                            Computacional.
+
+                        </p>
+
+                        <div class="mt-4 text-center">
+
+                            <a href="#sistema" class="btn btn-success btn-lg px-4 me-2">
+
+                                Probar Sistema
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- SISTEMA -->
+    <section id="sistema" class="container py-5">
+
+        <div class="card card-sistema mx-auto">
+
+            <div class="card-header bg-success text-white fw-bold py-3 fs-5">
+
+                <i class="fa-solid fa-face-viewfinder me-2"></i>
+
+                Analizador Biométrico de Expresiones Faciales
+
+            </div>
+
+            <div class="card-body p-4">
+
+                <p class="text-muted text-center mb-4">
+
+                    Sistema desarrollado para detectar emociones humanas en tiempo real utilizando Inteligencia
+                    Artificial.
+
+                </p>
+
+                <!-- VIDEO -->
+                <div class="text-center">
+
+                    <video id="webcam" autoplay muted></video>
+
+                </div>
+
+                <!-- RESULTADO -->
+                <div class="estado-emocion mt-4 text-center">
+
+                    <h4>Emoción Detectada</h4>
+
+                    <div id="emocion" class="emocion-texto">
+
+                        Esperando detección...
+
+                    </div>
+
+                    <div id="porcentaje" class="mt-2">
+
+                        Precisión: 0%
+
+                    </div>
+
+                </div>
+
+                <!-- BOTONES -->
+                <div class="d-grid gap-2 d-sm-flex justify-content-center mt-4">
+
+                    <button id="btn-stream" class="btn btn-success px-4 fw-bold" onclick="iniciarSistema()">
+
+                        <i class="fa-solid fa-camera"></i>
+                        Activar Cámara
+
+                    </button>
+
+                    <button class="btn btn-outline-success px-4" data-bs-toggle="collapse" data-bs-target="#infoIA">
+
+                        Información Técnica
+
+                    </button>
+
+                </div>
+
+                <!-- INFO -->
+                <div class="collapse mt-4" id="infoIA">
+
+                    <div class="bg-light rounded p-4 small">
+
+                        <h6 class="fw-bold">
+
+                            Arquitectura de Inteligencia Artificial
+
+                        </h6>
+
+                        <p>
+                            • Captura de video mediante getUserMedia().
+                        </p>
+
+                        <p>
+                            • Detección facial usando TinyFaceDetector.
+                        </p>
+
+                        <p>
+                            • Reconocimiento emocional mediante redes neuronales convolucionales.
+                        </p>
+
+                        <p class="mb-0">
+                            • Procesamiento local usando face-api.js y JavaScript.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMAGEN -->
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5 fw-bold text-success border-bottom-institucional pb-2">
+
+                Reconocimiento por Imagen
+
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6">
+
+                    <div class="card border-0 shadow-sm p-4">
+
+                        <input type="file" id="imagenInput" class="form-control mb-3">
+
+                        <img id="preview" class="img-fluid d-none mb-3">
+
+                        <div class="text-center">
+
+                            <h4>Resultado</h4>
+
+                            <h2 id="resultadoImagen">
+
+                                Sin análisis
+
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MANUAL -->
+    <section class="container py-5">
+
+        <h2 class="text-center mb-5 fw-bold text-success border-bottom-institucional pb-2">
+
+            Selección Manual de Emociones
+
+        </h2>
+
+        <div class="row g-4 text-center justify-content-center">
+
+            <div class="col-md-2 col-6">
+
+                <button class="btn-emocion" onclick="manual('Alegría 😀')">
+
+                    😀
+                    <div>Alegría</div>
+
+                </button>
+
+            </div>
+
+            <div class="col-md-2 col-6">
+
+                <button class="btn-emocion" onclick="manual('Tristeza 😢')">
+
+                    😢
+                    <div>Tristeza</div>
+
+                </button>
+
+            </div>
+
+            <div class="col-md-2 col-6">
+
+                <button class="btn-emocion" onclick="manual('Enojo 😡')">
+
+                    😡
+                    <div>Enojo</div>
+
+                </button>
+
+            </div>
+
+            <div class="col-md-2 col-6">
+
+                <button class="btn-emocion" onclick="manual('Sorpresa 😲')">
+
+                    😲
+                    <div>Sorpresa</div>
+
+                </button>
+
+            </div>
+
+            <div class="col-md-2 col-6">
+
+                <button class="btn-emocion" onclick="manual('Neutral 😐')">
+
+                    😐
+                    <div>Neutral</div>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <h3 id="manualResultado">
+
+                Seleccione una emoción
+
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADISTICAS -->
+    <section class="py-5 bg-dark">
+
+        <div class="container">
+
+            <h2 class="text-center text-white mb-5 fw-bold">
+
+                Estadísticas del Sistema
+
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="estadistica text-center">
+
+                        <h5>Total Detecciones</h5>
+
+                        <h2 id="total">0</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="estadistica text-center">
+
+                        <h5>Última Emoción</h5>
+
+                        <h2 id="ultima">---</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="estadistica text-center">
+
+                        <h5>Estado Sistema</h5>
+
+                        <h2 class="text-success">Activo</h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-center text-muted py-3">
+
+        <small>
+
+            © 2026 Universidad Técnica Luis Vargas Torres.
+
+        </small>
+
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Face API -->
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

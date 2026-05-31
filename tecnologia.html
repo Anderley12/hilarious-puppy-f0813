@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías de la Información - UTELVT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light pt-5 mt-3">
+
+       <!-- Menú de Navegación Global -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-institucional shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="UTLVTE" class="me-2" style="height: 40px;">
+                UTLVTE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-semibold justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienes-somos.html#historia">Historia</a></li>
+                            <li><a class="dropdown-item" href="filosofia.html">Filosofía</a></li>
+
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="servicios.html"  data-bs-toggle="dropdown"
+                            aria-expanded="false" onclick="window.location.href='servicios.html';">
+                            Servicios y Carreras
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="administracion.html">Administración de Empresas</a></li>
+                            <li><a class="dropdown-item" href="contabilidad.html">Contabilidad y Auditoría</a></li>
+                            <li><a class="dropdown-item" href="tecnologia.html">Tecnología de la Información</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Componentes Tecnológicos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-menu-item dropdown-item" href="componentes.html">Asistente &
+                                    Simulador</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="juego.html">Juego Educativo</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="reconocimiento.html">Reconocimiento
+                                    Emociones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO SECTION CARRERA -->
+    <header class="py-5" style="background: linear-gradient(to right, rgba(0, 102, 51, 0.7), rgba(255, 255, 255, 0.2)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container py-5 text-white">
+            <span class="badge bg-warning text-dark mb-2 fs-6">Facultad de Ingenierías (FACI)</span>
+            <h1 class="display-4 fw-bold">Tecnologías de la Información</h1>
+            <p class="lead mt-3" style="max-width: 700px;">Desarrolla soluciones de software innovadoras, gestiona infraestructuras de red seguras y conviértete en el arquitecto del futuro digital.</p>
+        </div>
+    </header>
+
+    <!-- CONTENIDO DE LA CARRERA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3" style="color: #006633;">Objetivo de la Carrera</h3>
+                    <p class="text-muted" style="text-align: justify;">Preparar Ingenieros en Tecnologías de la Información altamente calificados en el diseño, desarrollo, implementación y administración de sistemas informáticos, redes de comunicación y bases de datos. Los graduados aplicarán principios de ingeniería para resolver problemas computacionales complejos en cualquier entorno corporativo e industrial.</p>
+                    
+                    <h3 class="fw-bold mb-3 mt-5" style="color: #006633;">Perfil de Egreso</h3>
+                    <ul class="list-group list-group-flush shadow-sm rounded">
+                        <li class="list-group-item text-muted py-3"><i class="fa-solid fa-code text-success me-3"></i> Desarrollo de software a medida, aplicaciones web y móviles.</li>
+                        <li class="list-group-item text-muted py-3"><i class="fa-solid fa-network-wired text-success me-3"></i> Diseño, configuración y administración de redes y telecomunicaciones.</li>
+                        <li class="list-group-item text-muted py-3"><i class="fa-solid fa-database text-success me-3"></i> Gestión de bases de datos, Big Data y analítica de negocios.</li>
+                        <li class="list-group-item text-muted py-3"><i class="fa-solid fa-shield-halved text-success me-3"></i> Implementación de políticas de ciberseguridad y auditoría informática.</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card shadow-lg border-0 rounded-4 sticky-lg-top" style="top: 100px;">
+                        <div class="card-header text-white text-center py-3" style="background-color: #006633;">
+                            <h5 class="mb-0 fw-bold">Ficha Técnica</h5>
+                        </div>
+                        <div class="card-body p-4 bg-light">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-4">
+                                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-graduation-cap text-warning me-2"></i> Título que otorga</h6>
+                                    <span class="text-muted ms-4">Ingeniero/a en Tecnologías de la Información</span>
+                                </li>
+                                <li class="mb-4">
+                                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-clock text-warning me-2"></i> Duración</h6>
+                                    <span class="text-muted ms-4">9 Semestres</span>
+                                </li>
+                                <li class="mb-4">
+                                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-chalkboard-user text-warning me-2"></i> Modalidad</h6>
+                                    <span class="text-muted ms-4">Presencial</span>
+                                </li>
+                                <li>
+                                    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-building text-warning me-2"></i> Sede</h6>
+                                    <span class="text-muted ms-4">La Concordia (La Villegas)</span>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="d-grid">
+                                <a href="index.html#contacto" class="btn btn-warning fw-bold">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="bg-dark text-white pt-4 pb-3 mt-auto">
+        <div class="container text-center">
+            <p class="small text-light mb-0" style="opacity: 0.7;">&copy; 2026 Universidad Técnica Luis Vargas Torres - Sede La Concordia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - UTELVT Sede La Concordia</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tu hoja de estilos original del proyecto -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light pt-5 mt-4">
+    <!-- Menú de Navegación Global -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-institucional shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="UTLVTE" class="me-2" style="height: 40px;">
+                UTLVTE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-semibold justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienes-somos.html#historia">Historia</a></li>
+                            <li><a class="dropdown-item" href="filosofia.html">Filosofía</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='servicios.html';">
+                            Servicios y Carreras
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="administracion.html">Administración de Empresas</a></li>
+                            <li><a class="dropdown-item" href="contabilidad.html">Contabilidad y Auditoría</a></li>
+                            <li><a class="dropdown-item" href="tecnologia.html">Tecnología de la Información</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Componentes Tecnológicos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-menu-item dropdown-item" href="componentes.html">Asistente &
+                                    Simulador</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="juego.html">Juego Educativo</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="reconocimiento.html">Reconocimiento
+                                    Emociones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Historia y Presentación de la Sede La Concordia / La Villegas -->
+    <section class="py-3 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+
+                <!-- Foto de la Universidad -->
+                <div class="col-lg-6">
+                    <div class="position-relative shadow-lg rounded overflow-hidden">
+                        <!-- RUTA DE LA IMAGEN: Cambia el src por el nombre de la foto de la U que tienes -->
+                        <img src="foto-universidad.jpg" onerror="this.src='1-nuestro-campus4.jpg';"
+                            alt="Sede La Concordia UTELVT" class="img-fluid w-100 object-fit-cover"
+                            style="height: 450px;">
+                        <div class="position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-75 text-white p-3">
+                            <h5 class="mb-0 fw-bold">Campus Sede La Concordia</h5>
+                            <small>Santo Domingo de los Tsáchilas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Texto Histórico -->
+                <div class="col-lg-6">
+                    <h6 class="text-warning fw-bold text-uppercase" style="letter-spacing: 2px;">Nuestra Historia</h6>
+                    <h2 class="fw-bold text-success mb-4 pb-2"
+                        style="border-bottom: 3px solid #006633; display: inline-block;">
+                        UTELVT Sede Santo Domingo<br><span class="text-dark fs-4">(La Concordia - La Villegas)</span>
+                    </h2>
+                    <p class="text-muted" style="text-align: justify;">
+                        La Universidad Técnica "Luis Vargas Torres" Sede La Concordia tiene sus raíces de creación en el
+                        año 1994, iniciando sus actividades académicas con un paralelo ubicado en la población de La
+                        Villegas. Esta iniciativa nació con el propósito de profesionalizar a los docentes que impartían
+                        sus conocimientos en la región.
+                    </p>
+                    <p class="text-muted" style="text-align: justify;">
+                        Debido al rápido crecimiento y la necesidad de educación superior en la zona, la institución
+                        funcionó como paralelo hasta alcanzar un hito histórico: el 28 de marzo del año 2000, mediante
+                        la resolución N. 00345 del CONUEP, tomó oficialmente su jerarquía de Extensión Universitaria.
+                    </p>
+                    <p class="text-muted" style="text-align: justify;">
+                        Hoy en día, consolidada como Sede en la provincia de Santo Domingo de los Tsáchilas, forma
+                        profesionales de excelencia con visión estratégica, tecnológica y financiera a través de sus
+                        carreras de <strong>Administración de Empresas ,Contabilidad y Auditoría y Tecnología de la
+                            Información</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas Institucionales -->
+    <section class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 py-4" style="transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <i class="fa-solid fa-calendar-check fa-3x text-success mb-3"></i>
+                        <h2 class="display-5 fw-bold text-dark mb-2">26</h2>
+                        <p class="text-muted mb-0 fw-medium">Años de Jerarquía <br><small>(Desde 2000)</small></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 py-4" style="transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <i class="fa-solid fa-users fa-3x text-success mb-3"></i>
+                        <h2 class="display-5 fw-bold text-dark mb-2">+2,500</h2>
+                        <p class="text-muted mb-0 fw-medium">Estudiantes Activos<br><small>(Sede La Concordia)</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 py-4" style="transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <i class="fa-solid fa-user-tie fa-3x text-success mb-3"></i>
+                        <h2 class="display-5 fw-bold text-dark mb-2">3</h2>
+                        <p class="text-muted mb-0 fw-medium">Carreras de Grado<br><small>(Administración,
+                                Contabilidad y, TI)</small></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100 py-4" style="transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-5px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <i class="fa-solid fa-book-open-reader fa-3x text-success mb-3"></i>
+                        <h2 class="display-5 fw-bold text-dark mb-2">+100k</h2>
+                        <p class="text-muted mb-0 fw-medium">Recursos Bibliográficos<br><small>(Físicos y
+                                Virtuales)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección ¿Por qué elegirnos? -->
+    <section class="py-5 bg-white">
+        <div class="container py-5 text-center" style="max-width: 900px;">
+            <div class="mb-4">
+                <i class="fa-solid fa-graduation-cap fa-3x text-warning mb-3"></i>
+            </div>
+            <h2 class="fw-bold text-secondary mb-4" style="letter-spacing: 1px;">¿POR QUÉ ELEGIRNOS?</h2>
+            <p class="text-muted fs-5 lh-lg" style="text-align: justify; text-align-last: center;">
+                La Universidad Técnica "Luis Vargas Torres" Sede La Concordia se ha consolidado como el centro de
+                educación superior de referencia en la región. Otorgamos a nuestro alumnado beneficios invaluables como:
+                inclusión social, gratuidad de la educación, diversidad académica y amplios ambientes de aprendizaje.
+                Nuestro enfoque garantiza que los futuros profesionales en <strong>Tecnologías de la Información,
+                    Administración de Empresas y Contabilidad y Auditoría</strong> estén preparados para liderar los
+                retos del mundo moderno.
+            </p>
+            <div class="mt-4">
+                <a href="componentes.html" class="btn btn-success btn-lg px-5 rounded-pill shadow-sm">Explorar
+                    Plataforma Estudiantil</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold text-success"><i class="fa-solid fa-university"></i> UTELVT</h5>
+                    <p class="small text-light mt-3" style="opacity: 0.7;">Sede La Concordia (La Villegas), formando
+                        líderes en Tecnologías de la Información, Administración y Contabilidad para el desarrollo del
+                        país.</p>
+                </div>
+                <div class="col-md-4 mb-3 text-md-center">
+                    <h5 class="fw-bold">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled mt-3 small">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="quienes-somos.html" class="text-white text-decoration-none">Quiénes
+                                Somos</a></li>
+                        <li class="mb-2"><a href="componentes.html" class="text-white text-decoration-none">Componentes
+                                Tecnológicos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3 text-md-end">
+                    <h5 class="fw-bold">Contacto Sede</h5>
+                    <ul class="list-unstyled mt-3 small text-light" style="opacity: 0.7;">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-success"></i> La Concordia - La
+                            Villegas</li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-success"></i>
+                            info.concordia@utelvt.edu.ec</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center small text-light mt-3" style="opacity: 0.6;">
+                &copy; 2026 Universidad Técnica Luis Vargas Torres - 9no TI. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
